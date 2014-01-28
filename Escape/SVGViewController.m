@@ -7,8 +7,8 @@
 //
 
 #import "SVGViewController.h"
-#import "SVGMyScene.h"
-
+#import "SVGStartScreen.h"
+#import "SVGMainGameScreen.h"
 @implementation SVGViewController
 
 - (void)viewDidLoad
@@ -17,11 +17,9 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [SVGMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [SVGStartScreen sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
